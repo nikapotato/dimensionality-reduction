@@ -26,8 +26,8 @@ Compared to the ISOMAP method, the PCA method seems to be less accurate. Points 
 
 ## The effect of dimensionality reduction on a classiffication algorithm
 
-- **ISOMAP ACC**: 0.761666666666667" with k = 5
-- **PCA ACC**: 0.743333333333333"
-- **t-SNE ACC**: 0.606666666666667"
+- **ISOMAP ACC**: 0.761666666666667 with k = 5
+- **PCA ACC**: 0.743333333333333
+- **t-SNE ACC**: 0.606666666666667
 
 The resulting classification accuracy corresponds to the interpretation from the visual comparison of the methods (for k = 5). However, upon repeated application of the methods to the same dataset, these values changed (in the case of changing k for ISOMAP), and for t-SNE, it varied from 0.6 to the accuracy values of the PCA method. The ISOMAP method proves to be the most accurate for appropriately chosen values of k, followed by PCA, and finally t-SNE.
