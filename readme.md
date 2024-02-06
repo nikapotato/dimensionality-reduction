@@ -15,7 +15,7 @@ The data are vector representations of words in a latent (unknown) high-dimensio
 - Projected the geodesic distance matrix into 2D space with (Classical) Multidimensional Scaling
   
 An expected result (for *k* = 5) should look similar (not necessarily exactly the same) to following
-![graph_iso](graph_iso.pdf)
+![graph_iso](graph_iso.png)
 
 ## Results
 For each point, we found the k nearest neighbors, selecting points based on a fixed number. We then connected each point with its nearest neighbors, where the distance between them was equal to the Euclidean distance between the points. Using the Floyd-Warshall algorithm, implemented according to the algorithm in the reference above, we calculated the shortest paths between all pairs of points, thus approximating the geodesic distance between points. This was followed by dimensionality reduction using MDS (Multidimensional Scaling), which preserves distances between points (i.e., points that were close to each other before reduction should remain close afterwards).
